@@ -32,11 +32,18 @@ header h1 {
     margin: 0 auto;
     overflow: auto;
 }
-
+.clr{
+    clear: both;
+}
 .main {
     margin: 15px 0;
+    float:left;
+    width: 68%;
 }
-
+.sidebar{
+    float: right;
+    width: 28%;
+}
 footer {
     background: #3b3b3b;
     color: #fff;
