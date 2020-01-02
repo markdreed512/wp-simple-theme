@@ -1,0 +1,68 @@
+/* 
+Theme Name: Simple
+Author: Mark Reed
+Version: 1.0
+*/
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: arial;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7em;
+}
+
+header {
+    background: #393939;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.main {
+    margin: 15px 0;
+}
+
+footer {
+    background: #3b3b3b;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+.main-nav{
+    background: black;
+    color: white;
+    padding: 5px;
+}
+.main-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.main-nav li{
+    list-style-type: none;
+    float: left;
+    padding-right:15px;
+}
+.main-nam a{
+    color: #fff;
+
+}
