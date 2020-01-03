@@ -50,7 +50,27 @@ footer {
     padding: 10px 10px;
     text-align: center;
 }
-
+article.post{
+    border-bottom: 1px #ccc solid;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+article.post a.button{
+    /* display: inline-block; */
+    background: rgb(204, 153, 153);
+    color: #000;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.meta{
+    background: #333;
+    color: #fff;
+    padding: 5px;
+}
+.meta a{
+    color: #fff;
+}
 .post-thumbnail img {
     width: 100%;
     height: auto;
@@ -72,4 +92,15 @@ footer {
 .main-nam a{
     color: #fff;
 
+}
+.side-widget{
+    border: 1px #ccc solid;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.side-widget li{
+    list-style: none;
+    line-height: 2.2em;
+    border-bottom: dotted 1px #ccc;
 }

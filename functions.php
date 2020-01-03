@@ -27,7 +27,6 @@ function init_widgets($id){
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
-
         ));
 }
 

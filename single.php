@@ -1,9 +1,8 @@
 <?php get_header() ?>
-
+<div class="container">
     <div class="main">
-        <div class="container">
-            <?php if(have_posts()) : ?>
-                <?php while(have_posts()) : the_post(); ?>
+        <?php if(have_posts()) : ?>
+            <?php while(have_posts()) : the_post(); ?>
                 <article class="post">
                     <h3>
                             <?php the_title() ?>
@@ -18,12 +17,15 @@
 
                     <?php the_content(); ?>
                     <br>
-                    
-            </article>
-                <?php endwhile; ?>
-            <?php else :  ?>
-                <?php echo wpautop('Sorry, No posts were found'); ?>
-            <?php endif; ?>
-        </div>        
+                </article>
+            <?php endwhile; ?>
+        <?php else :  ?>
+            <?php echo wpautop('Sorry, No posts were found'); ?>
+        <?php endif; ?>
+        
+        <?php comments_template() ?>
+    
+    </div> 
+        
            <?php get_footer() ?>
-    </div>
+    

@@ -9,7 +9,11 @@
                             <?php the_title() ?>
                         </a>
                     </h3>
-                    <div class="meta">Created by <?php the_author(); ?> on <?php the_date('l, F jS, Y' ); ?></div>
+                    <div class="meta">Created by 
+                    <a href="<?php get_author_posts_url(get_the_author_meta('ID')); ?>">    
+                        <?php the_author(); ?>
+                    </a>
+                        on <?php the_date('l, F jS, Y' ); ?></div>
                     <?php if(has_post_thumbnail()) : ?>
                         <div class="post-thumbnail">
                             <?php the_post_thumbnail(); ?>
@@ -19,22 +23,13 @@
                     <?php the_excerpt(); ?>
                     <br>
                     <a href="<?php the_permalink() ?>" class="button">Read More</a>
-                    <hr>
+                    
             </article>
                 <?php endwhile; ?>
             <?php else :  ?>
                 <?php echo wpautop('Sorry, No posts were found'); ?>
             <?php endif; ?>
         </div> 
-    <!-- </div>       -->
-    <div class="sidebar">
-        <?php if(is_active_sidebar('sidebar')) : ?>
-            <?php dynamic_sidebar('sidebar'); ?>
-        <?php endif; ?>
-    
-    <div class="clr"></div>
-        </div>
-</div> 
-    
+
 <?php get_footer() ?>
     
